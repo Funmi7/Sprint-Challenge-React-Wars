@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
-import styled from "styled-components";
 import MainContent from "./components/component.js"
 
 const App = () => {
@@ -28,13 +27,15 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+
       {starwarsData.map(item => {
         return (
         <MainContent 
-        titles={item.name}
-        birthYear={item.birth_year}
-        mass={item.mass}
-        gender={item.gender}/> 
+          titles={item.name}
+          birthYear={item.birth_year}
+          mass={item.mass}
+          gender={item.gender}
+        /> 
         )
       })} 
     </div>
