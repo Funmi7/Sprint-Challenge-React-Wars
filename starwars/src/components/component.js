@@ -5,12 +5,20 @@ import styled from 'styled-components';
 
 
 const CharacterContainer = styled.div`
-    background-color: rgb(225, 235, 245);
+    background-color: rgb(235, 255, 251);
     margin: 0 auto;
+    width: 50%;
 
     section {
         display: flex;
         align-items: center;
+        margin: 0 auto;
+        margin-left: 40%;
+        margin-bottom: 10px;
+
+        p {
+            margin-left: 5px;
+        }
     }
     `
 
